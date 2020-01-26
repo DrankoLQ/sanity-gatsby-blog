@@ -48,6 +48,11 @@ export default {
     {
       type: 'mainImage',
       options: {hotspot: true}
+    },
+    {
+      name: 'code',
+      title: 'Code',
+      type: 'code'
     }
   ]
 }
