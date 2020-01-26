@@ -1,11 +1,12 @@
 import React from 'react'
 import Figure from './Figure'
+import SyntaxHighlighter from 'react-syntax-highlighter';
 
 const serializers = {
   types: {
     authorReference: ({node}) => <span>{node.author.name}</span>,
     mainImage: Figure,
-    code: ({node}) => <pre className={`language-${node.language}`}><code>{node.code}</code></pre>
+    code: ({node}) => <SyntaxHighlighter language={node.language}>{node.code}</SyntaxHighlighter>
   }
 }
 
